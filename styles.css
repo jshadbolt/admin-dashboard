@@ -1,0 +1,152 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    border: 1px solid aqua;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+.site-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: blue;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    padding: 5%;
+    gap: 5%;
+}
+
+.dashboard-title-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.logo-wrapper {
+    width: 50px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    padding: 6% 0;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    gap: 5%;
+}
+
+.user-navigation-links,
+.user-settings-links {
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    padding: 0 3%;
+}
+
+.header-top,
+.header-bottom {
+    display: grid;
+    align-items: center;
+}
+
+.header-top {
+    grid-template-columns: auto 1fr auto auto auto;
+}
+
+.search-bar {
+    width: 80%;
+}
+
+.header-bottom {
+    grid-template-columns: auto 1fr auto;
+}
+
+.main-content {
+    /* background-color: gold; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+}
+
+.section-title {
+    grid-column: 1 / 3;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+}
+
+.card-ribbon {
+    background-color: yellow;
+}
+
+.card-content {
+    display: grid;
+    grid-template-rows: 20% 1fr 20%;
+}
+
+.main-content-side-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.side-card-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 0 5%;
+}
+
+.side-card-title {
+
+}
+
+.slots-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, auto);
+    padding: 5%;
+}
+
+.trending-slot {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.user-image-wrapper {
+    width: 50px;
+    height: 50px;
+}
+
+.trending-text-wrapper {
+
+}
+
+
