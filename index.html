@@ -12,35 +12,53 @@
         <div class="sidebar">
             <div class="dashboard-title-wrapper">
                 <div class="logo-wrapper">
-                    <img src="" alt="" class="logo">
+                    <img src="./icons/sidebar/leaf.svg" alt="" class="logo">
                 </div>
-                <div class="dashboard-name">Dashboard</div>
+                <a href="">
+                    <div class="dashboard-name">LeafBlog</div>
+                </a>
             </div>
             <div class="user-navigation-links">
                 <ul>
-                    <li>
-                        <img src="" alt="" class="link-icon" id="">
+                    <li id="home">
+                        <img src="./icons/sidebar/home-circle-outline.svg" alt="" class="link-icon icon" id="home-icon">
                         <span>Home</span>
                     </li>
-                    <li>
-                        <img src="" alt="" class="link-icon" id="">
-                        <span>Home</span>
+                    <li id="profile">
+                        <img src="./icons/sidebar/account-circle-outline.svg" alt="" class="link-icon icon" id="profile-icon">
+                        <span>Profile</span>
+                    </li>
+                    <li id="messages">
+                        <img src="./icons/sidebar/chat-outline.svg" alt="" class="link-icon icon" id="messages-icon">
+                        <span>Messages</span>
+                    </li>
+                    <li id="history">
+                        <img src="./icons/sidebar/history.svg" alt="" class="link-icon icon" id="history-icon">
+                        <span>History</span>
+                    </li>
+                    <li id="tasks">
+                        <img src="./icons/sidebar/checkbox-marked-circle-auto-outline.svg" alt="" class="link-icon icon" id="tasks-icon">
+                        <span>Tasks</span>
+                    </li>
+                    <li id="community">
+                        <img src="./icons/sidebar/google-circles-communities.svg" alt="" class="link-icon icon" id="community-icon">
+                        <span>Community</span>
                     </li>
                 </ul>
             </div>
             <div class="user-settings-links">
                 <ul>
-                    <li>
-                        <img src="" alt="" class="link-icon">
-                        <span>Home</span>
+                    <li id="settings">
+                        <img src="./icons/sidebar/cog-outline.svg" alt="" class="link-icon icon" id="community-icon">
+                        <span>Settings</span>
                     </li>
-                    <li>
-                        <img src="" alt="" class="link-icon">
-                        <span>Home</span>
+                    <li id="support">
+                        <img src="./icons/sidebar/lifebuoy.svg" alt="" class="link-icon icon" id="support-icon">
+                        <span>Support</span>  
                     </li>
-                    <li>
-                        <img src="" alt="" class="link-icon">
-                        <span>Home</span>
+                    <li id="privacy">
+                        <img src="./icons/sidebar/shield-lock-outline.svg" alt="" class="link-icon icon" id="privacy-icon">
+                        <span>Privacy</span>
                     </li>
                 </ul>
             </div>
@@ -48,31 +66,27 @@
         <div class="header">
             <div class="header-top">
                 <div class="search-icon-wrapper">
-                    <img src="" alt="" class="search-icon">
+                    <img src="./icons/header/magnify.svg" alt="" class="search-icon icon large">
                 </div>
                 <div class="search-bar-wrapper">
-                    <input type="search" id="search-bar" class="search-bar" name="search-bar">
+                    <input type="search" id="search-bar" class="search-bar" name="search-bar" placeholder="">
                 </div>
                 <div class="notification-icon-wrapper">
-                    <img src="" alt="" class="notification-icon">
+                    <img src="./icons/header/bell-circle-outline.svg" alt="" class="notification-icon icon large">
                 </div>
-                <div class="user-image-wrapper">
-                    <img src="" alt="" class="user-image">
-                </div>
+                <div src="." alt="" class="user-image medium" id="currentUser"></div>
                 <div class="user-name">Morgan Oakley</div>
             </div>
             <div class="header-bottom">
-                <div class="user-image-wrapper">
-                    <img src="" alt="" class="user-image">
-                </div>
+                <div src="" alt="" class="user-image" id="currentUser"></div>
                 <div class="user-name-wrapper">
-                    <div class="welcome-msg">Hi there,</div>
-                    <div class="user-name large">Morgan Oakley</div>
+                    <div class="user-name subtitle">Hi there,</div>
+                    <div class="user-name large">Morgan</div>
                 </div>
                 <div class="user-buttons-wrapper">
-                    <button class="btn-new">New</button>
-                    <button class="btn-upload">Upload</button>
-                    <button class="btn-share">Share</button>
+                    <button class="user-button" id="new">New</button>
+                    <button class="user-button" id="upload">Upload</button>
+                    <button class="user-button" id="share">Share</button>
                 </div>
             </div>
         </div>
@@ -82,79 +96,131 @@
                 <div class="card">
                     <div class="card-ribbon"></div>
                     <div class="card-content">
-                        <div class="card-title">Super cool project</div>
-                        <div class="card-text">Pargraph text here</div>
+                        <div class="card-title">Impossible App</div>
+                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laudantium magni, magnam ab maxime dolore ratione architecto commodi, quas saepe deleniti numquam aliquam velit distinctio excepturi asperiores! Exercitationem, tempore voluptatibus.</div>
                         <div class="card-buttons">
-                            <img src="" alt="" class="card-btn" id="favourite">
-                            <img src="" alt="" class="card-btn" id="watch">
-                            <img src="" alt="" class="card-btn" id="share">
+                            <img src="./icons/card/creation.svg" alt="" class="card-btn icon" id="favourite">
+                            <img src="./icons/card/eye-lock-open.svg" alt="" class="card-btn icon" id="watch">
+                            <img src="./icons/card/database-export.svg" alt="" class="card-btn icon" id="share">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-ribbon"></div>
+                    <div class="card-content">
+                        <div class="card-title">Poem generator</div>
+                        <div class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora eligendi harum nulla ex veritatis, eveniet impedit dolorum rerum provident suscipit temporibus asperiores aperiam nemo nisi excepturi quaerat id labore cum.
+                        Animi, unde nihil reiciendis, odit assumenda quibusdam vel consequuntur ipsa, similique maxime qui veritatis</div>
+                        <div class="card-buttons">
+                            <img src="./icons/card/creation.svg" alt="" class="card-btn icon" id="favourite">
+                            <img src="./icons/card/eye-lock-open.svg" alt="" class="card-btn icon" id="watch">
+                            <img src="./icons/card/database-export.svg" alt="" class="card-btn icon" id="share">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-ribbon"></div>
+                    <div class="card-content">
+                        <div class="card-title">Easy Peasey App</div>
+                        <div class="card-text">Consectetur porro neque est necessitatibus accusantium doloremque quo, nemo velit perspiciatis temporibus? Deleniti, corrupti odio.</div>
+                        <div class="card-buttons">
+                            <img src="./icons/card/creation.svg" alt="" class="card-btn icon" id="favourite">
+                            <img src="./icons/card/eye-lock-open.svg" alt="" class="card-btn icon" id="watch">
+                            <img src="./icons/card/database-export.svg" alt="" class="card-btn icon" id="share">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-ribbon"></div>
+                    <div class="card-content">
+                        <div class="card-title">Super cool project</div>
+                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laudantium magni, magnam ab maxime dolore ratione architecto commodi, quas saepe deleniti numquam aliquam velit distinctio excepturi asperiores! Exercitationem, tempore voluptatibus.</div>
+                        <div class="card-buttons">
+                            <img src="./icons/card/creation.svg" alt="" class="card-btn icon" id="favourite">
+                            <img src="./icons/card/eye-lock-open.svg" alt="" class="card-btn icon" id="watch">
+                            <img src="./icons/card/database-export.svg" alt="" class="card-btn icon" id="share">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-ribbon"></div>
+                    <div class="card-content">
+                        <div class="card-title">Notes app</div>
+                        <div class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora eligendi harum nulla ex veritatis, eveniet impedit dolorum rerum provident suscipit temporibus asperiores aperiam nemo nisi excepturi quaerat id labore cum.
+                        Animi, unde nihil reiciendis,  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores molestias temporibus officiis explicabo? Molestias molestiae non quasi unde inventore, omnis quis suscipit laudantium? odit assumenda quibusdam vel consequuntur ipsa, similique maxime qui veritatis cum?</div>
+                        <div class="card-buttons">
+                            <img src="./icons/card/creation.svg" alt="" class="card-btn icon" id="favourite">
+                            <img src="./icons/card/eye-lock-open.svg" alt="" class="card-btn icon" id="watch">
+                            <img src="./icons/card/database-export.svg" alt="" class="card-btn icon" id="share">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-ribbon"></div>
+                    <div class="card-content">
+                        <div class="card-title">Extension ideas</div>
+                        <div class="card-text">Consectetur porro neque est necessitatibus accusantium doloremque quo, nemo velit perspiciatis temporibus? Deleniti, corrupti odio.</div>
+                        <div class="card-buttons">
+                            <img src="./icons/card/creation.svg" alt="" class="card-btn icon" id="favourite">
+                            <img src="./icons/card/eye-lock-open.svg" alt="" class="card-btn icon" id="watch">
+                            <img src="./icons/card/database-export.svg" alt="" class="card-btn icon" id="share">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="main-content-side-container">
                 <div class="side-card-wrapper" id="announcements">
-                    <div class="side-card-title">Announcements</div>
+                    <div class="section-title">Announcements</div>
                     <div class="slots-container">
                         <div class="slot">
                             <div class="slot-title">Site maintenance</div>
-                            <div class="slot-text">side card paragraph text</div>
+                            <div class="slot-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis asperiores tenetur necessitatibus assumenda, voluptate, consequuntur ut fuga a facilis...</div>
                         </div>
                         <div class="slot">
                             <div class="slot-title">Site maintenance</div>
-                            <div class="slot-text">side card paragraph text</div>
+                            <div class="slot-text">libero cum recusandae aut ipsa eius. Quos quidem libero magnam...</div>
                         </div>
                         <div class="slot">
                             <div class="slot-title">Site maintenance</div>
-                            <div class="slot-text">side card paragraph text</div>
+                            <div class="slot-text">Distinctio perspiciatis asperiores tenetur necessitatibus assumenda, voluptate, consequuntur ut fuga a facilis...</div>
                         </div>
                     </div>
                 </div>
                 <div class="side-card-wrapper" id="trending">
-                    <div class="side-card-title">Trending</div>
-                    <div class="slots-container">
+                    <div class="section-title">Trending</div>
+                    <div class="slots-container trending">
                         <div class="trending-slot">
-                            <div class="user-image-wrapper">
-                                <img src="" alt="" class="user-image">
-                            </div>
+                            <div src="" alt="" class="user-image small" id="user2"></div>
                             <div class="trending-text-wrapper">
                                 <div class="slot-title">Site maintenance</div>
                                 <div class="slot-text">side card paragraph text</div>
                             </div>
                         </div>
                         <div class="trending-slot">
-                            <div class="user-image-wrapper">
-                                <img src="" alt="" class="user-image">
-                            </div>
+                            <div src="" alt="" class="user-image small" id="user3"></div>
                             <div class="trending-text-wrapper">
                                 <div class="slot-title">@Site maintenance</div>
                                 <div class="slot-text">side card paragraph text</div>
                             </div>
                         </div>
                         <div class="trending-slot">
-                            <div class="user-image-wrapper">
-                                <img src="" alt="" class="user-image">
-                            </div>
+                                <div src="" alt="" class="user-image small" id="user4"></div>
                             <div class="trending-text-wrapper">
-                                <div class="slot-title">Site maintenance</div>
+                                <div class="slot-title">@Site maintenance</div>
                                 <div class="slot-text">side card paragraph text</div>
                             </div>
                         </div>
                         <div class="trending-slot">
-                            <div class="user-image-wrapper">
-                                <img src="" alt="" class="user-image">
-                            </div>
+                                <div src="" alt="" class="user-image small" id="user5"></div>
                             <div class="trending-text-wrapper">
-                                <div class="slot-title">Site maintenance</div>
+                                <div class="slot-title">@Site maintenance</div>
                                 <div class="slot-text">side card paragraph text</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-    
 </body>
 </html>
