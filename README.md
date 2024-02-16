@@ -1,3 +1,3 @@
-# admin-dashboard
-Layout design for an admin dashboard.
+# blog-admin-dashboard
+Layout design for an blogging dashboard.
 
