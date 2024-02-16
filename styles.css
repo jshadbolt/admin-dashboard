@@ -41,10 +41,10 @@ html, body {
 
 body {
     /* background-color: var(--dark-red); */
-    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     color: var(--txt-clr-white);
-    background-color: #433633;  
-
+    background: rgb(67,54,51);
+    background: linear-gradient(0deg, rgba(67,54,51,1) 0%, rgba(61,90,115,1) 100%); 
 }
 
 button {
@@ -162,6 +162,7 @@ ul {
     padding: 10px 30px;
     outline: none;
     font-size: calc(var(--font-medium) - 0.1rem);
+    font-family: inherit;
 
 }
 
